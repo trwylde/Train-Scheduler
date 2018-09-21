@@ -20,6 +20,8 @@ var trainName = $("#trainName").val().trim();
 var destination = $("#destination").val().trim();
 var firstTrain = moment($("#firstTrain").val().trim(),"HH:mm").subtract(1, "years").format("X");
 var frequency = $("#frequency").val().trim();
+
+
   
 console.log(firstTrain);
 
@@ -31,6 +33,11 @@ var newTrain = {
   frequency: frequency
 }
   database.ref().push(newTrain);
+
+  $("#trainName").val("");
+  $("#destination").val("");
+  $("#firstTrain").val("");
+  $("#frequency").val("");
 
   return false;
 });
@@ -86,6 +93,10 @@ database.ref().on("child_added", function (snapshot) {
 
   
   $("#train-info").append(tr);
+
+  
+
+  
 
   },
   //Handle the errors
