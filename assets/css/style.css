@@ -1,5 +1,29 @@
-body {
-  background-image: url("../images/vintage-train.png");
-  background-size: cover;
-}
+/*
+font-family: 'Raleway', sans-serif;
+font-family: 'Fredericka the Great', sans-serif; 
+*/
 
+body {
+  background-image: url("../images/train-drawing.png");
+  background-size: cover;
+  font-family: 'Raleway', sans-serif
+}
+#masthead {
+  font-family: 'Fredericka the Great', sans-serif;
+  text-align: center;
+}
+.card-content {
+  border-radius: 20px;
+}
+.card-panel {
+  border-radius: 20px;
+}
+.container {
+  border-radius: 20px;
+}
+::placeholder {
+  font-family: 'Raleway', sans-serif;
+}
+#add-train {
+  border-radius: 20px;
+}
